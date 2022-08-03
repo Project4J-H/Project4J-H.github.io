@@ -1,0 +1,187 @@
+body{
+    background-color: lightblue;
+    align-items: center;
+
+}
+.gamebox{
+    height: 600px;
+    width: 900px;
+    background-color: lightgray;
+    margin-left: 25%;
+    position: fixed;
+    border-radius: 10px;
+}
+.guessbox{
+    height: 60%;
+    width: 60%;
+    background-color: plum;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.icon{
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
+    /* border: 2px solid purple;
+    background-color: aqua; */
+    height: 35%;
+    width: 35%;
+
+}
+.icon img{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    margin-top: 25px;
+    margin-left: 22px;
+}
+.uInput{
+    width: 25%;
+    padding: 15px;
+    background-color: lightgray;
+    border-radius: 15px;
+    margin-left: auto;
+   margin-right: auto;
+    border: none;
+    text-align: center;
+
+}
+.checkButton{
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    width: 80px;
+    padding:10px ;
+    border: none;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.playAgain{
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    width: 90px;
+    padding:10px ;
+    border: none;
+    display: none;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tryAgain{
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    width: 90px;
+    padding:10px ;
+    border: none;
+    display: none;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b2{
+    background-color: pink;
+    border-radius: 10px;
+    width: 80px;
+    padding:15px ;
+    border: none;
+    margin-right: 5px;
+    margin-top: 15px;
+    align-self: center;
+}
+.smallbox{
+    width: 150px;
+    height: 90px;
+    background-color: pink;
+    border-radius: 20px;
+    margin-left: 20px;
+    text-align: center;
+    float: left;
+}
+.bigger{
+    width: 100%;
+    height: 20%;
+     /* background-color: bisque;  */
+
+}
+.historybox{
+    margin: auto;
+    height: 13%;
+    width: 40%;
+    background-color:aliceblue;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    overflow: auto;
+}
+.reset{
+    float: right;
+    border: 2px solid red;
+    width: 15%;
+    height: 20%;
+    align-items:
+
+}
+.prevHS{
+  background-color: plum;
+  border-radius: 15px;
+  width: 90px;
+  padding:10px ;
+  border: none;
+  margin-right: 5px;
+  margin-top: 15px;
+  align-self:center;
+  }
+
+.submitScore{
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  width: 80px;
+  padding:10px ;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.p1{
+    font-weight: bolder;
+}
+
+#spanInner{
+    font-weight: bolder;
+}
+#yourScore{
+    font-weight: bolder;
+    font-size: 20px;
+}
+#best{
+    font-weight: bolder;
+}
+#innerP{
+    display: none;
+}
+#yourScore{
+    display: none;
+}
+#best{
+    display: none;
+}
+#topmsg{
+    display: none;
+    font-size: 20px;
+    color: aliceblue;
+}

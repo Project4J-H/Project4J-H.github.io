@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <link rel="stylesheet" href="index.css">
+    </script>
+    <meta charset="utf-8">
+    <title>Project 3</title>
+  </head>
+  <body>
+    <h1 align="center">Guess My Number</h1>
+    <h3 align="center">Guess the number between 1 and 100</h3>
+    <div class="gamebox">
+        <div class="bigger">
+            <div class="smallbox p1"> <p id="score">Score: 10</p>  <p id="highScore">High Score: 0 </p>
+        </div>
+        <div class="reset">
+          <button class="b2">RESET</button>
+              <button type="button" class="prevHS">Previous High Score</button>
+        </div>
+      </div>
+        <div class="guessbox">
+            <div class="icon"> <img src="images/guy1.png" id="image1"></div>
+       <br>
+        <p id="topmsg">hi </p>
+        <input type="text" placeholder="Guess a number" class="uInput">
+        <p id="innerP">Your guess was correct! <span id="spanInner">value </span> is my secret number. <br>
+          <p id="yourScore">Score </p>
+          <p id="best">you        </p>
+        <button class="checkButton" >CHECK</button>
+        <button class="playAgain" >Play Again</button>
+        <button class="tryAgain"> Try Again</button>
+        <br>
+
+
+        <p style="color:white; font-size:20px" id="hints">Guess a number</p>
+        <button type="button" class="submitScore">Submit your score</button>
+    </div>
+    <br>
+
+    <div class="historybox"><p id="titleGHS">Guess History </p><span id="guessesHis"> </span></div>
+  </div>
+
+    <script type="text/javascript" src="index.js"></script>
+
+<!-- Modal Window -->
+<!-- The Modal -->
+<div id="modal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Submit Your Score =D</h3>
+    <form class="" action="index.html" method="post">
+      <table>
+
+        <input type="text" name="userName" value="" placeholder="Enter Username">
+        <p id=''>Your High Score is: </p>
+
+      </table>
+
+    </form>
+  </div>
+</div>
+
+<div id="secmodal" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content2">
+    <span class="close2">&times;</span>
+  
+  </div>
+</div>
+
+
+
+
+
+  </body>
+</html>
