@@ -24,6 +24,7 @@ const innerP=document.querySelector('#innerP');
 const topmsg=document.querySelector('#topmsg');
 const guessbox=document.querySelector('.guessbox');
 const submit=document.querySelector('.submitScore');
+const modalScore=document.querySelector('#modalScore');
 
 
   let points = 10;
@@ -74,13 +75,15 @@ const submit=document.querySelector('.submitScore');
     topmsg.style.display='block';
     topmsg.textContent= 'Sorry You Lose =(';
     gamebox.style.paddingBottom='5%';
-    guessbox.style.height="65%";
+    guessbox.style.height="75%";
     innerP.style.display="block";
     innerP.textContent=("Don't give up and Try again. You can win next Time.");
     yourScore.textContent=(`My number was: ${randomNum}` );
     tryA.style.display="block";
+    modalScore.textContent=(`Your High Score is: ${bestS}`);
     bestS=0;
     submit.style.display='block';
+
   }
   function eraseHistory(arr)
   {
@@ -109,6 +112,7 @@ const submit=document.querySelector('.submitScore');
     playAgain.style.display="block";
     guessbox.style.height="68%";
     gamebox.style.paddingBottom='5%';
+
     // document.querySelector().textContent=(`Your guess was correct ${randomNum} is my secret number.`);
   }
 
@@ -117,6 +121,16 @@ const submit=document.querySelector('.submitScore');
     if(document.getElementById("userName").value==' ')
     {
       alert('User name is Empty please enter a User Name to submit');
+        return false;
+    }
+    else if(document.getElementById("fName").value==' ')
+    {
+      alert('First name is Empty please enter a User Name to submit');
+        return false;
+    }
+    else if(document.getElementById("lName").value==' ')
+    {
+      alert('Last name is Empty please enter a User Name to submit');
         return false;
     }
       return true;
@@ -160,6 +174,7 @@ checkBtn.addEventListener('click', function () {
       score.textContent=(`Score: ${points}`);
       msg.textContent=('Guess is low ');
     }
+    document.querySelector('#guessesHis').innerHTML=history ;
 });
 //FOR PLAYAGAIN BUTTON
 
