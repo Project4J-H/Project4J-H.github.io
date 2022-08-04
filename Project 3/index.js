@@ -23,11 +23,12 @@ const playAgain=document.querySelector('.playAgain');
 const innerP=document.querySelector('#innerP');
 const topmsg=document.querySelector('#topmsg');
 const guessbox=document.querySelector('.guessbox');
+const submit=document.querySelector('.submitScore');
 
 
   let points = 10;
   let highScore=0;
-  let guesses=9;
+  let guesses=9; ///change back
   let bestS=0;
   let current=0;
   let highS=0;
@@ -79,7 +80,7 @@ const guessbox=document.querySelector('.guessbox');
     yourScore.textContent=(`My number was: ${randomNum}` );
     tryA.style.display="block";
     bestS=0;
-    document.querySelector('.submitScore').style.display='block';
+    submit.style.display='block';
   }
   function eraseHistory(arr)
   {
@@ -108,6 +109,17 @@ const guessbox=document.querySelector('.guessbox');
     playAgain.style.display="block";
     guessbox.style.height="68%";
     gamebox.style.paddingBottom='5%';
+    // document.querySelector().textContent=(`Your guess was correct ${randomNum} is my secret number.`);
+  }
+
+  function verify()
+  {
+    if(document.getElementById("userName").value==' ')
+    {
+      alert('User name is Empty please enter a User Name to submit');
+        return false;
+    }
+      return true;
   }
 
 checkBtn.addEventListener('click', function () {
@@ -178,6 +190,7 @@ playAgain.addEventListener('click', function()
   innerP.style.display='none';
   yourScore.style.display='none';
   best.style.display='none';
+  submit.style.display='none';
 });
 
 tryA.addEventListener('click', function()
@@ -207,7 +220,36 @@ tryA.addEventListener('click', function()
   innerP.style.display='none';
   yourScore.style.display='none';
   best.style.display='none';
-  tryA.style.display="none"
+  tryA.style.display="none";
+    submit.style.display='none';
   current=0;
 
+});
+
+// First modal
+let modal = document.getElementById("modal1");
+let btn = document.querySelector('.prevHS');
+let spans = document.getElementsByClassName("close")[0];
+btn.addEventListener('click',function()
+{
+modal.style.display = "block";
+});
+
+spans.addEventListener('click',function()
+{
+modal.style.display = "none";
+});
+
+// second modal
+let modal2 = document.getElementById("modal2");
+let btn2 = document.querySelector('.submitScore');
+let spans2 = document.getElementsByClassName("close2")[0];
+btn2.addEventListener('click',function()
+{
+modal2.style.display = "block";
+});
+
+spans2.addEventListener('click',function()
+{
+modal2.style.display = "none";
 });

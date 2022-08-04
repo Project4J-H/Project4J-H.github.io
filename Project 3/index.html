@@ -16,7 +16,7 @@
         </div>
         <div class="reset">
           <button class="b2">RESET</button>
-              <button type="button" class="prevHS">Previous High Score</button>
+              <button type="button" class="prevHS">Previous High Scores</button>
         </div>
       </div>
         <div class="guessbox">
@@ -41,40 +41,39 @@
     <div class="historybox"><p id="titleGHS">Guess History </p><span id="guessesHis"> </span></div>
   </div>
 
-    <script type="text/javascript" src="index.js"></script>
 
 <!-- Modal Window -->
 <!-- The Modal -->
 <div id="modal1" class="modal">
-
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Submit Your Score =D</h3>
-    <form class="" action="index.html" method="post">
-      <table>
+<h3>Previous Scores</h3>
+<div class="">
+  CONTEXT HERE
+</div>
+  </div>
+</div>
+
+
+<div id="modal2" class="modal2">
+  <!-- Modal content -->
+  <div class="modal-content2">
+    <span class="close2">&times;</span>
+    <h3>Submit Your Score!</h3>
+    <form class="" action="" method="post" onsubmit="return verify()">
 
         <input type="text" name="userName" value="" placeholder="Enter Username">
         <p id=''>Your High Score is: </p>
 
-      </table>
-
+        <input type="submit" name="" value="SUBMIT">
     </form>
   </div>
 </div>
 
-<div id="secmodal" class="modal2">
-
-  <!-- Modal content -->
-  <div class="modal-content2">
-    <span class="close2">&times;</span>
-  
-  </div>
-</div>
 
 
 
-
-
+  <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
