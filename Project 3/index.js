@@ -81,6 +81,8 @@ const modalScore=document.querySelector('#modalScore');
     yourScore.textContent=(`My number was: ${randomNum}` );
     tryA.style.display="block";
     modalScore.textContent=(`Your High Score is: ${bestS}`);
+    modalScore.value=bestS;
+    console.log(modalScore.value);
     bestS=0;
     submit.style.display='block';
 
